@@ -1,8 +1,8 @@
-# @ramonak/react-progress-bar
+# @ramonak/voby-progress-bar
 
-> Progress Bar React Component
+> Progress Bar Voby Component
 
-[![NPM](https://img.shields.io/npm/v/@ramonak/react-progress-bar.svg)](https://www.npmjs.com/package/@ramonak/react-progress-bar) ![npm bundle size](https://img.shields.io/bundlephobia/min/@ramonak/react-progress-bar)![GitHub](https://img.shields.io/github/license/katerinalupacheva/react-progress-bar)![npm](https://img.shields.io/npm/dw/@ramonak/react-progress-bar)
+[![NPM](https://img.shields.io/npm/v/@ramonak/voby-progress-bar.svg)](https://www.npmjs.com/package/@ramonak/voby-progress-bar) ![npm bundle size](https://img.shields.io/bundlephobia/min/@ramonak/voby-progress-bar)![GitHub](https://img.shields.io/github/license/katerinalupacheva/voby-progress-bar)![npm](https://img.shields.io/npm/dw/@ramonak/voby-progress-bar)
 
 ---
 
@@ -10,22 +10,22 @@
 
 ---
 
-[Playground / Code Generator](https://katerinalupacheva.github.io/react-progress-bar/)
+[Playground / Code Generator](https://katerinalupacheva.github.io/voby-progress-bar/)
 
 ---
 
 ## Install
 
 ```bash
-npm install --save @ramonak/react-progress-bar
+npm install --save @ramonak/voby-progress-bar
 ```
 
 ## Usage
 
 ```jsx
-import React from "react";
+import React from "voby";
 
-import ProgressBar from "@ramonak/react-progress-bar";
+import ProgressBar from "@ramonak/voby-progress-bar";
 
 const Example = () => {
   return <ProgressBar completed={60} />;

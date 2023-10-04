@@ -1,33 +1,17 @@
 {
-  "name": "@ramonak/react-progress-bar-example",
+  "name": "@ramonak/voby-progress-bar-example",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://KaterinaLupacheva.github.io/react-progress-bar",
+  "homepage": "https://KaterinaLupacheva.github.io/voby-progress-bar",
   "dependencies": {
-    "@ramonak/react-progress-bar": "file:../ramonak-react-progress-bar-5.0.3.tgz",
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
-    "node-sass": "npm:sass@^1.49.7",
-    "react": "^18.1.0",
-    "react-color": "^2.19.3",
-    "react-dom": "^18.1.0",
-    "react-scripts": "5.0.1",
+    "voby-progress-bar": "file:../ramonak-voby-progress-bar-5.0.3.tgz",
     "web-vitals": "^0.2.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "extends": []
   },
   "browserslist": {
     "production": [

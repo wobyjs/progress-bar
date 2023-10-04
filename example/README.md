@@ -2,7 +2,7 @@
 
 ---
 
-[Playground / Code Generator](https://katerinalupacheva.github.io/react-progress-bar/)
+[Playground / Code Generator](https://katerinalupacheva.github.io/voby-progress-bar/)
 
 ---
 
@@ -13,4 +13,4 @@
 3. Run `npm install`
 4. Run `npm start`
 
-This example was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This example was bootstrapped with [Create React App](https://github.com/facebook/create-voby-app).

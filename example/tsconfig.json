@@ -16,20 +16,20 @@
     "declaration": true,
     "moduleResolution": "node",
     "forceConsistentCasingInFileNames": true,
-    // "noImplicitReturns": true,
-    // "noImplicitThis": true,
-    // "noImplicitAny": true,
-    // "strictNullChecks": false,
-    // "noUnusedLocals": true,
-    // "noUnusedParameters": true
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitAny": false,
+    "strictNullChecks": false,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true
   },
-  // "include": [
-  //   "src"
-  // ],
+  "include": [
+    "src"
+  ],
   "exclude": [
     "node_modules",
     "dist",
     "example",
-    "vite.config.ts",
+    "rollup.config.js"
   ]
 }
