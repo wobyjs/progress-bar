@@ -1,5 +1,5 @@
 import { render } from ''
-import ReactDOM from 'voby-dom'
+import ReactDOM from 'woby-dom'
 import App from './App'
 
 it('renders without crashing', () => {

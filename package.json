@@ -1,59 +1,59 @@
 {
-  "name": "voby-progress-bar",
-  "version": "5.0.3",
-  "description": "> Progress Bar Voby Component",
-  "main": "./dist/index.cjs.js",
-  "module": "./dist/index.es.js",
-  "browser": "./dist/index.umd.js",
-  "types": "./dist/types/index.d.ts",
-  "directories": {
-    "example": "example"
-  },
-  "scripts": {
-    "//build": "rm -rf dist && rollup -c",
-    "//start": "rollup -c -w",
-    "//prepublish:public": "npm run build",
-    "//publish:public": "npm publish --access public",
-    "css:watch": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
-    "css": "tailwindcss -i ./src/input.css -o ./dist/output.css",
-    "declaration": "tsc --build --force --declaration --emitDeclarationOnly --verbose",
-    "declaration:watch": "tsc --build --force --declaration --emitDeclarationOnly --verbose --watch",
-    "watch": "run-p build:watch css:watch",
-    "build": "run-s css build:vite css",
-    "build:web": "vite build --config=vite.config.web.ts --force --mode production",
-    "web": "vite preview --config=vite.config.web.ts --host",
-    "dev:only": "vite --config=vite.config.web.ts --force --mode dev --host",
-    "dev": "run-p css:watch dev:only",
-    "build:vite": "vite build",
-    "build:watch": "vite build --watch",
-    "preview": "vite preview --host"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/wongchichong/voby-progress-bar.git"
-  },
-  "keywords": [
-    "voby",
-    "voby-component",
-    "progress bar",
-    "progress-bar"
-  ],
-  "author": "Wong Chi Chong",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/wongchichong/voby-progress-bar/issues"
-  },
-  "homepage": "https://wongchichong.github.io/voby-progress-bar/",
-  "peerDependencies": {
-    "voby": "workspace:../woby",
-    "voby-styled": "workspace:../voby-styled"
-  },
-  "devDependencies": {
-    "tailwindcss": "^3.3.3",
-    "vite": "^4.4.8",
-    "vite-plugin-dts": "^2.3.0"
-  },
-  "files": [
-    "dist"
-  ]
+    "name": "woby-progress-bar",
+    "version": "5.0.3",
+    "description": "> Progress Bar Voby Component",
+    "main": "./dist/index.cjs.js",
+    "module": "./dist/index.es.js",
+    "browser": "./dist/index.umd.js",
+    "types": "./dist/types/index.d.ts",
+    "directories": {
+        "example": "example"
+    },
+    "scripts": {
+        "//build": "rm -rf dist && rollup -c",
+        "//start": "rollup -c -w",
+        "//prepublish:public": "npm run build",
+        "//publish:public": "npm publish --access public",
+        "css:watch": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+        "css": "tailwindcss -i ./src/input.css -o ./dist/output.css",
+        "declaration": "tsc --build --force --declaration --emitDeclarationOnly --verbose",
+        "declaration:watch": "tsc --build --force --declaration --emitDeclarationOnly --verbose --watch",
+        "watch": "run-p build:watch css:watch",
+        "build": "run-s css build:vite css",
+        "build:web": "vite build --config=vite.config.web.ts --force --mode production",
+        "web": "vite preview --config=vite.config.web.ts --host",
+        "dev:only": "vite --config=vite.config.web.ts --force --mode dev --host",
+        "dev": "run-p css:watch dev:only",
+        "build:vite": "vite build",
+        "build:watch": "vite build --watch",
+        "preview": "vite preview --host"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/wongchichong/woby-progress-bar.git"
+    },
+    "keywords": [
+        "woby",
+        "woby-component",
+        "progress bar",
+        "progress-bar"
+    ],
+    "author": "Wong Chi Chong",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/wongchichong/woby-progress-bar/issues"
+    },
+    "homepage": "https://wongchichong.github.io/woby-progress-bar/",
+    "peerDependencies": {
+        "woby": "workspace:../woby",
+        "woby-styled": "workspace:../woby-styled"
+    },
+    "devDependencies": {
+        "tailwindcss": "^3.3.3",
+        "vite": "^4.4.11",
+        "vite-plugin-dts": "^2.3.0"
+    },
+    "files": [
+        "dist"
+    ]
 }
