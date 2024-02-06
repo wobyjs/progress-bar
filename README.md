@@ -2,7 +2,7 @@
 
 Progress Bar Voby Component
 
-Port from [React-Progress-Bar](https://github.com/katerinalupacheva/react-progress-bar/)
+Ported from [React-Progress-Bar](https://github.com/katerinalupacheva/react-progress-bar/)
 
 [![NPM](https://img.shields.io/npm/v/wongchichong/woby-progress-bar.svg)](https://www.npmjs.com/package/wongchichong/woby-progress-bar) ![npm bundle size](https://img.shields.io/bundlephobia/min/wongchichong/woby-progress-bar)![GitHub](https://img.shields.io/github/license/wongchichong/woby-progress-bar)![npm](https://img.shields.io/npm/dw/wongchichong/woby-progress-bar)
 
