@@ -1,49 +1,64 @@
 {
-  "name": "@ramonak/react-progress-bar",
-  "version": "5.0.3",
-  "description": "> Progress Bar React Component",
-  "main": "dist/index.js",
-  "directories": {
-    "example": "example"
-  },
-  "scripts": {
-    "build": "rm -rf dist && rollup -c",
-    "start": "rollup -c -w",
-    "prepublish:public": "npm run build",
-    "publish:public": "npm publish --access public"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/KaterinaLupacheva/react-progress-bar.git"
-  },
-  "keywords": [
-    "react",
-    "react-component",
-    "progress bar",
-    "progress-bar"
-  ],
-  "author": "KaterinaLupacheva",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/KaterinaLupacheva/react-progress-bar/issues"
-  },
-  "homepage": "https://katerinalupacheva.github.io/react-progress-bar/",
-  "peerDependencies": {
-    "react": "^16.0.0 || ^17 || ^18",
-    "react-dom": "^16.0.0 || ^17 || ^18"
-  },
-  "devDependencies": {
-    "@types/react": "^18.0.12",
-    "@types/react-dom": "^18.0.5",
-    "babel-core": "^6.26.3",
-    "babel-runtime": "^6.26.0",
-    "react": "^18.1.0",
-    "react-dom": "^18.1.0",
-    "rollup": "^2.75.5",
-    "rollup-plugin-typescript2": "^0.29.0",
-    "typescript": "^4.7.3"
-  },
-  "files": [
-    "dist"
-  ]
+    "name": "woby-progress-bar",
+    "version": "5.0.5",
+    "description": "> Progress Bar Voby Component",
+    "main": "./dist/index.cjs.js",
+    "module": "./dist/index.es.js",
+    "browser": "./dist/index.umd.js",
+    "types": "./dist/types/index.d.ts",
+    "directories": {
+        "example": "example"
+    },
+    "scripts": {
+        "//build": "rm -rf dist && rollup -c",
+        "//start": "rollup -c -w",
+        "//prepublish:public": "npm run build",
+        "git": "git add . && git commit -m \"Bump version\" && git push",
+        "bump": "pnpm version patch",
+        "npmjs": "pnpm publish",
+        "release": "run-s -c git bump npmjs",
+        "css:watch": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+        "css": "tailwindcss -i ./src/input.css -o ./dist/output.css",
+        "declaration": "tsc --build --force --declaration --emitDeclarationOnly --declarationMap  --verbose",
+        "declaration:watch": "tsc --build --force --declaration --emitDeclarationOnly --declarationMap  --verbose --watch",
+        "watch": "run-p build:watch css:watch",
+        "build": "cls && run-s css build:vite css declaration",
+        "build:web": "vite build --config=vite.config.web.mts --force --mode production",
+        "web": "vite preview --config=vite.config.web.mts --host",
+        "dev:only": "vite --config=vite.config.web.mts --force --mode dev --host",
+        "dev": "run-p css:watch dev:only",
+        "build:vite": "vite build",
+        "build:watch": "vite build --watch",
+        "preview": "vite preview --host"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/wongchichong/woby-progress-bar.git"
+    },
+    "keywords": [
+        "woby",
+        "woby-component",
+        "progress bar",
+        "progress-bar"
+    ],
+    "author": "Wong Chi Chong",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/wongchichong/woby-progress-bar/issues"
+    },
+    "homepage": "https://wongchichong.github.io/woby-progress-bar/",
+    "peerDependencies": {
+        "woby": "workspace:../woby",
+        "woby-styled": "workspace:../woby-styled"
+    },
+    "devDependencies": {
+        "tailwindcss": "^3.4.3",
+        "vite": "5.2.8"
+    },
+    "files": [
+        "dist"
+    ],
+    "dependencies": {
+        "typescript": "5.4.4"
+    }
 }
