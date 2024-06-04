@@ -1,8 +1,10 @@
-# @ramonak/react-progress-bar
+# woby-progress-bar
 
-> Progress Bar React Component
+Progress Bar Voby Component
 
-[![NPM](https://img.shields.io/npm/v/@ramonak/react-progress-bar.svg)](https://www.npmjs.com/package/@ramonak/react-progress-bar) ![npm bundle size](https://img.shields.io/bundlephobia/min/@ramonak/react-progress-bar)![GitHub](https://img.shields.io/github/license/katerinalupacheva/react-progress-bar)![npm](https://img.shields.io/npm/dw/@ramonak/react-progress-bar)
+Ported from [React-Progress-Bar](https://github.com/katerinalupacheva/react-progress-bar/)
+
+[![NPM](https://img.shields.io/npm/v/wongchichong/woby-progress-bar.svg)](https://www.npmjs.com/package/wongchichong/woby-progress-bar) ![npm bundle size](https://img.shields.io/bundlephobia/min/wongchichong/woby-progress-bar)![GitHub](https://img.shields.io/github/license/wongchichong/woby-progress-bar)![npm](https://img.shields.io/npm/dw/wongchichong/woby-progress-bar)
 
 ---
 
@@ -10,22 +12,20 @@
 
 ---
 
-[Playground / Code Generator](https://katerinalupacheva.github.io/react-progress-bar/)
+[Playground / Code Generator](https://katerinalupacheva.github.io/woby-progress-bar/)
 
 ---
 
 ## Install
 
 ```bash
-npm install --save @ramonak/react-progress-bar
+npm install --save woby-progress-bar
 ```
 
 ## Usage
 
 ```jsx
-import React from "react";
-
-import ProgressBar from "@ramonak/react-progress-bar";
+import ProgressBar from "woby-progress-bar";
 
 const Example = () => {
   return <ProgressBar completed={60} />;
