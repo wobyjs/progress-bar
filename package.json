@@ -1,6 +1,6 @@
 {
     "name": "woby-progress-bar",
-    "version": "5.0.5",
+    "version": "5.0.6",
     "description": "> Progress Bar Voby Component",
     "main": "./dist/index.cjs.js",
     "module": "./dist/index.es.js",
