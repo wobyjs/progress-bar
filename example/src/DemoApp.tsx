@@ -9,7 +9,7 @@ export const DemoApp = () => {
         setInterval(() => completed(Math.floor(Math.random() * 100) + 1), 2000)
     })
 
-    return <div className="App">
+    return <div class="App">
         <h3>Randomly generated completed value</h3>
         <ProgressBar completed={completed} />
         <hr />

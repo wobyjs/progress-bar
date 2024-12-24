@@ -92,10 +92,10 @@ import './styles.scss'
 
 <ProgressBar
   completed={80}
-  className="wrapper"
-  barContainerClassName="container"
-  completedClassName="barCompleted"
-  labelClassName="label"
+  class="wrapper"
+  barContainerclass="container"
+  completedclass="barCompleted"
+  labelclass="label"
 />
 ```
 

@@ -122,16 +122,16 @@ export const CustomizedBar = () => {
             handleBooleanPropChange={handleBooleanPropChange}
             handleReset={handleReset}
         />
-        <button className="bg-[darkseagreen] text-[large] m-5 p-2.5" onClick={handleReset}>
+        <button class="bg-[darkseagreen] text-[large] m-5 p-2.5" onClick={handleReset}>
             RESET
         </button>
-        <button className="bg-[cyan] text-[large] p-2.5 rounded-[10px]" onClick={generateCode}>
+        <button class="bg-[cyan] text-[large] p-2.5 rounded-[10px]" onClick={generateCode}>
             Generate Component Code
         </button>
         <div>
             {
                 showCode && (
-                    <div className="relative [&_button]:absolute [&_button]:right-2.5 [&_button]:top-2.5
+                    <div class="relative [&_button]:absolute [&_button]:right-2.5 [&_button]:top-2.5
 [&_textarea]:w-full [&_textarea]:h-[200px] [&_textarea]:m-0 [&_textarea]:p-0">
                         <button onClick={copyToClipboard}>{copySuccess}</button>
                         <textarea

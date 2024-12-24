@@ -144,7 +144,7 @@ export const ProgressBar = ({
 
     return <div
         style={() => $$(className) ? undefined : $$(outsideStyles)}
-        className={className}
+        class={className}
         dir={dir}
         role="progressbar"
         aria-valuenow={() => parseFloat($$(labelStr) as string)}
@@ -152,17 +152,17 @@ export const ProgressBar = ({
         aria-valuemax={ariaValuemax}
         aria-valuetext={() => $$(ariaValuetext) === null ? $$(labelStr) : $$(ariaValuetext)}
     >
-        <div style={() => $$(barContainerClassName) ? undefined : $$(containerStyles)} className={barContainerClassName}>
-            <div style={() => $$(completedClassName) ? undefined : $$(fillerStyles)} className={completedClassName}>
+        <div style={() => $$(barContainerClassName) ? undefined : $$(containerStyles)} class={barContainerClassName}>
+            <div style={() => $$(completedClassName) ? undefined : $$(fillerStyles)} class={completedClassName}>
                 {() => $$(labelAlignment) !== 'outside' && (
-                    <span style={() => $$(labelClassName) ? undefined : $$(labelStyles)} className={labelClassName} >
+                    <span style={() => $$(labelClassName) ? undefined : $$(labelStyles)} class={labelClassName} >
                         {labelStr}
                     </span>
                 )}
             </div>
         </div>
         {() => $$(labelAlignment) === 'outside' && (
-            <span style={() => $$(labelClassName) ? undefined : $$(labelStyles)} className={labelClassName}>
+            <span style={() => $$(labelClassName) ? undefined : $$(labelStyles)} class={labelClassName}>
                 {labelStr}
             </span>
         )}

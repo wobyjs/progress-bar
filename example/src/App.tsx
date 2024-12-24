@@ -12,7 +12,7 @@ export const App = () => {
     }
     useViewCounter(getSlug())
 
-    return <div className="App" >
+    return <div class="App" >
         <DemoApp />
     </div>
 }

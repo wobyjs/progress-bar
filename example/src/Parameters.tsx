@@ -28,7 +28,7 @@ export const Parameters = ({ handleChange, handleBgChange, handleBaseBgChange, h
     const param = `flex justify-start m-5 [&_label]:mr-2.5 [&_button]:mr-2.5 [&_input]:border-[gray] [&_input]:border-solid [&_input]:border-[1px]`
 
     return <>
-        <div className={param}>
+        <div class={param}>
             <label htmlFor="completed">completed</label>
             <input
                 name="completed"
@@ -38,7 +38,7 @@ export const Parameters = ({ handleChange, handleBgChange, handleBaseBgChange, h
                 onChange={handleChange}
             />
         </div>
-        <div className={param}>
+        <div class={param}>
             <label htmlFor="maxCompleted">max completed</label>
             <input
                 name="maxCompleted"
@@ -48,7 +48,7 @@ export const Parameters = ({ handleChange, handleBgChange, handleBaseBgChange, h
                 onChange={handleChange}
             />
         </div>
-        <div className={param}>
+        <div class={param}>
             <label htmlFor="customLabel">custom label</label>
             <input
                 name="customLabel"
@@ -58,7 +58,7 @@ export const Parameters = ({ handleChange, handleBgChange, handleBaseBgChange, h
                 onChange={handleChange}
             />
         </div>
-        <div className={param}>
+        <div class={param}>
             <button onClick={() => cpOne.isVisible(true)}>
                 Choose Bar Color
             </button>
@@ -86,7 +86,7 @@ export const Parameters = ({ handleChange, handleBgChange, handleBaseBgChange, h
                 }}
             />
         </div>
-        <div className={param}>
+        <div class={param}>
             <label htmlFor="height">height</label>
             <input
                 name="height"
@@ -96,7 +96,7 @@ export const Parameters = ({ handleChange, handleBgChange, handleBaseBgChange, h
                 onChange={handleChange}
             />
         </div>
-        <div className={param}>
+        <div class={param}>
             <label htmlFor="width">width</label>
             <input
                 name="width"
@@ -106,7 +106,7 @@ export const Parameters = ({ handleChange, handleBgChange, handleBaseBgChange, h
                 onChange={handleChange}
             />
         </div>
-        <div className={param}>
+        <div class={param}>
             <label htmlFor="borderRadius">border radius</label>
             <input
                 name="borderRadius"
@@ -116,7 +116,7 @@ export const Parameters = ({ handleChange, handleBgChange, handleBaseBgChange, h
                 onChange={handleChange}
             />
         </div>
-        <div className={param}>
+        <div class={param}>
             <label htmlFor="labelAlignment">label alignment</label>
             <select
                 name="labelAlignment"
@@ -130,7 +130,7 @@ export const Parameters = ({ handleChange, handleBgChange, handleBaseBgChange, h
                 <option value="outside">outside</option>
             </select>
         </div>
-        <div className={param}>
+        <div class={param}>
             <button onClick={() => cpThree.isVisible(true)}>
                 Choose Label Color
             </button>
@@ -158,7 +158,7 @@ export const Parameters = ({ handleChange, handleBgChange, handleBaseBgChange, h
                 }}
             />
         </div>
-        <div className={param}>
+        <div class={param}>
             <label htmlFor="labelSize">label size</label>
             <input
                 name="labelSize"
@@ -168,7 +168,7 @@ export const Parameters = ({ handleChange, handleBgChange, handleBaseBgChange, h
                 onChange={handleChange}
             />
         </div>
-        <div className={param}>
+        <div class={param}>
             <label htmlFor="isLabelVisible">is label visible</label>
             <select
                 name="isLabelVisible"
@@ -182,7 +182,7 @@ export const Parameters = ({ handleChange, handleBgChange, handleBaseBgChange, h
                 <option value={"false"}>false</option>
             </select>
         </div>
-        <div className={param}>
+        <div class={param}>
             <button onClick={() => cpTwo.isVisible(true)}>
                 Choose "non-completed" Bar Color
             </button>
@@ -210,11 +210,11 @@ export const Parameters = ({ handleChange, handleBgChange, handleBaseBgChange, h
                 }}
             />
         </div>
-        <div className={param}>
+        <div class={param}>
             <label htmlFor="margin">margin</label>
             <input name="margin" id="margin" type="text" onChange={handleChange} />
         </div>
-        <div className={param}>
+        <div class={param}>
             <label htmlFor="padding">padding</label>
             <input
                 name="padding"
@@ -223,7 +223,7 @@ export const Parameters = ({ handleChange, handleBgChange, handleBaseBgChange, h
                 onChange={handleChange}
             />
         </div>
-        <div className={param}>
+        <div class={param}>
             <label htmlFor="transitionDuration">transition duration</label>
             <input
                 name="transitionDuration"
@@ -232,7 +232,7 @@ export const Parameters = ({ handleChange, handleBgChange, handleBaseBgChange, h
                 onChange={handleChange}
             />
         </div>
-        <div className={param}>
+        <div class={param}>
             <label htmlFor="transitionTimingFunction">
                 transition timing function
             </label>
@@ -249,7 +249,7 @@ export const Parameters = ({ handleChange, handleBgChange, handleBaseBgChange, h
                 <option value="ease-out">ease - out</option>
             </select>
         </div>
-        <div className={param}>
+        <div class={param}>
             <label htmlFor="animateOnRender">animate on render</label>
             <select
                 name="animateOnRender"
@@ -263,7 +263,7 @@ export const Parameters = ({ handleChange, handleBgChange, handleBaseBgChange, h
                 <option value={"false"}>false</option>
             </select>
         </div>
-        <div className={param}>
+        <div class={param}>
             <label htmlFor="dir">direction</label>
             <select name="dir" defaultValue="ltr" id="dir" onChange={handleChange}>
                 <option value="ltr">ltr</option>
