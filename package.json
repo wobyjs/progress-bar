@@ -1,6 +1,6 @@
 {
     "name": "@woby/progress-bar",
-    "version": "5.0.8",
+    "version": "5.0.9",
     "publishConfig": {
         "access": "public"
     },
