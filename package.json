@@ -1,6 +1,9 @@
 {
-    "name": "woby-progress-bar",
+    "name": "@woby/progress-bar",
     "version": "5.0.8",
+    "publishConfig": {
+        "access": "public"
+    },
     "description": "> Progress Bar Voby Component",
     "main": "./dist/index.cjs.js",
     "module": "./dist/index.es.js",
@@ -18,11 +21,11 @@
         "npmjs": "pnpm publish",
         "release": "run-s -c git bump npmjs",
         "css:watch": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
-        "css": "tailwindcss -i ./src/input.css -o ./dist/output.css",
+        "css11": "tailwindcss -i ./src/input.css -o ./dist/output.css",
         "declaration": "tsc --build --force --declaration --emitDeclarationOnly --declarationMap  --verbose",
         "declaration:watch": "tsc --build --force --declaration --emitDeclarationOnly --declarationMap  --verbose --watch",
         "watch": "run-p build:watch css:watch",
-        "build": "cls && run-s css build:vite css declaration",
+        "build": "run-s build:vite declaration",
         "build:web": "vite build --config=vite.config.web.mts --force --mode production",
         "web": "vite preview --config=vite.config.web.mts --host",
         "dev:only": "vite --config=vite.config.web.mts --force --mode dev --host",
@@ -33,7 +36,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/wongchichong/woby-progress-bar.git"
+        "url": "git+https://github.com/wongchichong/progress-bar.git"
     },
     "keywords": [
         "woby",
@@ -44,21 +47,22 @@
     "author": "Wong Chi Chong",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/wongchichong/woby-progress-bar/issues"
+        "url": "https://github.com/wongchichong/progress-bar/issues"
     },
-    "homepage": "https://wongchichong.github.io/woby-progress-bar/",
+    "homepage": "https://wongchichong.github.io/progress-bar/",
     "peerDependencies": {
         "woby": "workspace:../woby",
-        "woby-styled": "workspace:../woby-styled"
+        "@woby/styled": "workspace:../styled"
     },
     "devDependencies": {
-        "tailwindcss": "^3.4.17",
-        "vite": "6.0.5"
+        "tailwindcss": "^4.0.17",
+        "@tailwindcss/vite": "^4.0.6",
+        "vite": "6.1.0"
     },
     "files": [
         "dist"
     ],
     "dependencies": {
-        "typescript": "5.7.2"
+        "typescript": "5.7.3"
     }
 }

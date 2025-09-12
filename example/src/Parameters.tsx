@@ -1,5 +1,5 @@
 import { $ } from 'woby'
-// import { ChromePicker } from "woby-color"
+// import { ChromePicker } from '@woby/color"
 import { useClickOutside } from "./useClickOutside.hook"
 
 export const Parameters = ({ handleChange, handleBgChange, handleBaseBgChange, handleLabelColorChange, handleBooleanPropChange, handleReset }) => {

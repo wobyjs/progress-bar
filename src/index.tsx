@@ -1,7 +1,7 @@
 /// <reference types="Woby/dist/types/jsx/types" />
 
 import { $, $$, useEffect, useMemo, CSSProperties, ObservableMaybe, type JSX } from 'woby'
-
+import './input.css'
 
 export interface ProgressBarProps {
     bgColor?: ObservableMaybe<string>

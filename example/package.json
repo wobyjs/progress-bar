@@ -1,8 +1,8 @@
 {
-    "name": "@ramonak/woby-progress-bar-example",
+    "name": "@ramonak/progress-bar-example",
     "version": "0.1.0",
     "private": true,
-    "homepage": "https://KaterinaLupacheva.github.io/woby-progress-bar",
+    "homepage": "https://KaterinaLupacheva.github.io/progress-bar",
     "dependencies": {
         "woby-progress-bar": "file:../ramonak-voby-progress-bar-5.0.3.tgz",
         "web-vitals": "^0.2.4"

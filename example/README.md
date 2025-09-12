@@ -2,7 +2,7 @@
 
 ---
 
-[Playground / Code Generator](https://katerinalupacheva.github.io/woby-progress-bar/)
+[Playground / Code Generator](https://wobyjs.github.io/progress-bar/)
 
 ---
 
