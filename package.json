@@ -36,18 +36,18 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/wongchichong/progress-bar.git"
+        "url": "git+https://github.com/wobyjs/progress-bar.git"
     },
     "keywords": [
         "woby",
-        "woby-component",
+        "@woby/component",
         "progress bar",
         "progress-bar"
     ],
     "author": "Wong Chi Chong",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/wongchichong/progress-bar/issues"
+        "url": "https://github.com/wobyjs/progress-bar/issues"
     },
     "homepage": "https://wongchichong.github.io/progress-bar/",
     "peerDependencies": {

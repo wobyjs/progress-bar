@@ -4,7 +4,7 @@
     "private": true,
     "homepage": "https://KaterinaLupacheva.github.io/progress-bar",
     "dependencies": {
-        "woby-progress-bar": "file:../ramonak-voby-progress-bar-5.0.3.tgz",
+        "@woby/progress-bar": "file:../ramonak-voby-progress-bar-5.0.3.tgz",
         "web-vitals": "^0.2.4"
     },
     "scripts": {
